@@ -1,0 +1,35 @@
+{
+  "name": "fetch-country-flag",
+  "version": "1.0.0",
+  "description": "Simple package to fetch flag of any country by name.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.ts",
+    "index.d.ts"
+  ],
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.7"
+  },
+  "scripts": {
+    "test": "cd test && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snowflake107/fetch-country-flag.git"
+  },
+  "keywords": [
+    "flags",
+    "country",
+    "country-flag"
+  ],
+  "author": "Snowflake107",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Snowflake107/fetch-country-flag/issues"
+  },
+  "homepage": "https://github.com/Snowflake107/fetch-country-flag#readme"
+}
