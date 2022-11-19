@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-const ENDPOINT = "https://restcountries.eu/rest/v2/name";
+const ENDPOINT = "https://restcountries.com/v2/name";
 
 interface FlagOptions {
     type?: "svg" | "png";
@@ -45,7 +45,7 @@ function flag(country: string, options: FlagOptions): Promise<data> {
 
                 const emt: data = {
                     name: body[0].name,
-                    flag: `https://www.countryflags.io/${body[0].alpha2Code}/${options.theme || "flat"}/${options.size || "64"}.png`
+                    flag: `https://www.countryflagsapi.com/png/${body[0].alpha2Code}`
                 };
                 resolve(emt);
             })
